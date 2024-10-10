@@ -165,7 +165,7 @@ Maintenant que Git est prêt, passez à l'étape suivante : **Créer un dépôt 
 
 Vous pouvez explorer plus d'options avec Git et vous perfectionner, mais pour l’instant, vous êtes prêt à démarrer vos premiers projets en gestion de version ! 😄
 
-➡️ [Toutes les commandes Git expliquées](./commandes/README.md)  
+➡️ [Toutes les commandes Git expliquées](./commandes/README.md)    
 ➡️ [Toutes les bonnes pratiques à connaitre sur GIT](./bonnes-pratiques/README.md)
 ---
 
