@@ -59,6 +59,15 @@ sudo dnf install GitHubDesktop-linux-2.9.14-linux1.rpm
 
 ---
 
+## 🚀 Prochaines étapes
+Maintenant que Git est prêt, passez à l'étape suivante : **Créer un dépôt et commencer à utiliser Git !**
+
+Vous pouvez explorer plus d'options avec Git et vous perfectionner, mais pour l’instant, vous êtes prêt à démarrer vos premiers projets en gestion de version ! 😄
+
+➡️ [Toutes les commandes Git expliquées](./commandes/README.md)    
+➡️ [Toutes les bonnes pratiques à connaitre sur GIT](./bonnes-pratiques/README.md)
+---
+
 ## 📚 Ressources supplémentaires
 - Documentation officielle de GitHub Desktop : [https://docs.github.com/en/desktop](https://docs.github.com/en/desktop)
 - Guide d'utilisation avancée : [https://docs.github.com/en/desktop/contributing-to-projects](https://docs.github.com/en/desktop/contributing-to-projects)
