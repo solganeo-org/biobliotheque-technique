@@ -13,10 +13,10 @@ Nous avons rassemblé ici les bonnes pratiques, des tutoriels détaillés et les
 
 ## 🚀 Contenu de la bibliothèque
 
-### 📂 [Tutoriel GitHub Bash](./github-technique/)
+### 📂 [Tutoriel GitHub Technique](./github-technique/)
 Ce guide couvre toutes les **commandes Git** que vous pouvez exécuter via **Git Bash**, ainsi que des explications détaillées pour chaque commande. Idéal pour ceux qui aiment travailler en ligne de commande.
 
-### 🖥️ [Tutoriel GitHub Desktop](./github-fonctionnel/)
+### 🖥️ [Tutoriel GitHub Fonctionnel](./github-fonctionnel/)
 Ce guide vous aidera à tirer le meilleur parti de **GitHub Desktop**, l'outil graphique qui facilite l'utilisation de Git pour ceux qui préfèrent une interface visuelle. Nous y avons inclus des bonnes pratiques pour vous assurer une collaboration fluide et un workflow Git propre.
 
 ---
