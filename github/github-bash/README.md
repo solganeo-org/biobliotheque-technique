@@ -168,6 +168,7 @@ Vous pouvez explorer plus d'options avec Git et vous perfectionner, mais pour l�
 ➡️ [Toutes les commandes Git expliquées](./commandes/README.md)
 
 ➡️ [Toutes les bonnes pratiques à connaitre sur GIT](./bonnes-pratiques/README.md)
+
 ---
 
 ## 📚 Ressources supplémentaires
