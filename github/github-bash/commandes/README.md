@@ -151,9 +151,31 @@ Cela annule le dernier commit et remet les fichiers à l'état précédent. Util
 
 ---
 
+### 13. `git revert` ⏪
+**Description** : Revert un commit spécifique sans détruire l'historique.
+
+**Exemple** :
+```bash
+git revert <commit-hash>
+```
+Cela crée un nouveau commit qui annule les changements introduits par un commit précédent. Idéal pour corriger des erreurs sans modifier l'historique du projet.
+
+---
+
+### 14. `git rm` 🗑️
+**Description** : Supprime des fichiers du dépôt et du système de versionnement Git.
+
+**Exemple** :
+```bash
+git rm nom-du-fichier.txt
+```
+Cela supprime le fichier du dépôt et le marque comme supprimé pour le prochain commit. Vous pouvez aussi utiliser `git rm --cached` pour seulement retirer le fichier de l'index Git sans le supprimer localement.
+
+---
+
 ## 🚨 Commandes supplémentaires utiles
 
-### 13. `git stash` 💼
+### 15. `git stash` 💼
 **Description** : Met temporairement de côté les modifications en cours de travail sans les commiter.
 
 **Exemple** :
@@ -164,7 +186,7 @@ Cela sauvegarde vos changements actuels sans les commiter, afin que vous puissie
 
 ---
 
-### 14. `git rebase` 🛠️
+### 16. `git rebase` 🛠️
 **Description** : Rebase une branche sur une autre pour réécrire l'historique des commits.
 
 **Exemple** :
@@ -172,6 +194,28 @@ Cela sauvegarde vos changements actuels sans les commiter, afin que vous puissie
 git rebase main
 ```
 Cela permet de replacer les commits de votre branche courante sur une autre branche (`main` dans cet exemple) pour obtenir un historique linéaire. À utiliser avec prudence.
+
+---
+
+### 17. `git diff` 🔍
+**Description** : Compare les modifications entre l'état actuel des fichiers et le dernier commit ou un autre point de l'historique.
+
+**Exemple** :
+```bash
+git diff
+```
+Cela affiche les différences non commitées entre vos fichiers locaux et l'historique Git.
+
+---
+
+### 18. `git cherry-pick` 🍒
+**Description** : Applique un commit spécifique d'une branche sur une autre branche.
+
+**Exemple** :
+```bash
+git cherry-pick <commit-hash>
+```
+Cela permet de choisir un commit spécifique et de l'appliquer à votre branche active.
 
 ---
 
