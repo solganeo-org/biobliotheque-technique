@@ -1,4 +1,3 @@
-**
 # 🎯 Bonnes pratiques Git avec GitHub Desktop 🎯
 
 GitHub Desktop est un excellent outil pour simplifier l'utilisation de Git avec une interface graphique conviviale. Cependant, même avec une interface simple, il est important de suivre certaines bonnes pratiques pour garantir un workflow Git propre et éviter les conflits.
