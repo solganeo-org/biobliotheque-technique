@@ -94,9 +94,57 @@ Si une version s’affiche (par exemple, `git version 2.33.0`), Git est bien ins
 
 ---
 
+## 🔐 Configurer une clé SSH pour GitHub
+
+### Pourquoi utiliser une clé SSH ?
+Une clé SSH vous permet de vous authentifier sur GitHub sans avoir à entrer vos identifiants à chaque fois que vous interagissez avec un dépôt. Voici comment la configurer.
+
+### 1. Générer une clé SSH
+Ouvrez un terminal et entrez la commande suivante pour générer une nouvelle paire de clés SSH :
+
+```bash
+ssh-keygen -t ed25519 -C "votre.email@example.com"
+```
+
+Remplacez **votre.email@example.com** par l'adresse email associée à votre compte GitHub. Vous pouvez laisser l'emplacement par défaut (en appuyant sur Entrée).
+
+### 2. Ajouter la clé SSH à l'agent SSH
+Lancez l'agent SSH pour qu'il puisse gérer vos clés :
+
+```bash
+eval "$(ssh-agent -s)"
+```
+
+Puis, ajoutez votre nouvelle clé à l'agent SSH :
+
+```bash
+ssh-add ~/.ssh/id_ed25519
+```
+
+### 3. Ajouter la clé SSH à votre compte GitHub
+- Copiez la clé publique dans le presse-papier :
+
+  ```bash
+  cat ~/.ssh/id_ed25519.pub
+  ```
+
+- Allez dans les **Settings** de votre compte GitHub, puis dans **SSH and GPG keys**.
+- Cliquez sur **New SSH key**, collez la clé publique et enregistrez.
+
+### 4. Tester la connexion SSH
+Vérifiez que tout est en place en exécutant la commande suivante :
+
+```bash
+ssh -T git@github.com
+```
+
+Si tout fonctionne, vous verrez un message comme **"Hi username! You've successfully authenticated."**
+
+---
+
 ## 🎉 Git est installé ! Et maintenant ?
 
-Maintenant que Git est installé, vous pouvez commencer à l'utiliser pour gérer vos projets. Voici quelques commandes de base pour commencer :
+Maintenant que Git est installé et que votre clé SSH est configurée, vous pouvez commencer à utiliser Git pour gérer vos projets. Voici quelques commandes de base pour commencer :
 
 ### Configurer Git avec votre nom et email (important !) 📝
 
