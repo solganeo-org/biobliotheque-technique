@@ -90,9 +90,20 @@ Cela envoie vos changements sur la branche `main` du dépôt distant. Vous devez
 
 ---
 
+### 8. `git push --delete` 🗑️
+**Description** : Supprime une branche sur le dépôt distant.
+
+**Exemple** :
+```bash
+git push origin --delete nom-de-la-branche
+```
+Cela supprime une branche du dépôt distant (par exemple, une branche qui n'est plus nécessaire après une fusion).
+
+---
+
 ## 🔧 Commandes pour la gestion des branches
 
-### 8. `git branch` 🌿
+### 9. `git branch` 🌿
 **Description** : Liste toutes les branches locales dans le dépôt.
 
 **Exemple** :
@@ -103,7 +114,7 @@ Cela affiche toutes les branches dans votre dépôt, avec un `*` indiquant la br
 
 ---
 
-### 9. `git checkout` et `git checkout -b` 🔄
+### 10. `git checkout` et `git checkout -b` 🔄
 **Description** :
 - `git checkout nom-de-la-branche` : Change de branche.
 - `git checkout -b nom-de-la-branche` : Crée une nouvelle branche et se place dessus.
@@ -116,7 +127,7 @@ Cela crée et passe sur une nouvelle branche nommée `nouvelle-branche`. Très u
 
 ---
 
-### 10. `git merge` 🔗
+### 11. `git merge` 🔗
 **Description** : Fusionne une branche avec la branche courante.
 
 **Exemple** :
@@ -129,7 +140,7 @@ Cela intègre les modifications d'une autre branche dans la branche active. Util
 
 ## 🧹 Commandes pour gérer l'historique
 
-### 11. `git log` 📜
+### 12. `git log` 📜
 **Description** : Affiche l'historique des commits dans la branche actuelle.
 
 **Exemple** :
@@ -140,7 +151,7 @@ Cela liste tous les commits effectués dans la branche courante, avec l'auteur, 
 
 ---
 
-### 12. `git reset` ❌
+### 13. `git reset` ❌
 **Description** : Annule des commits ou des modifications non souhaitées.
 
 **Exemple** :
@@ -151,7 +162,7 @@ Cela annule le dernier commit et remet les fichiers à l'état précédent. Util
 
 ---
 
-### 13. `git revert` ⏪
+### 14. `git revert` ⏪
 **Description** : Revert un commit spécifique sans détruire l'historique.
 
 **Exemple** :
@@ -162,7 +173,7 @@ Cela crée un nouveau commit qui annule les changements introduits par un commit
 
 ---
 
-### 14. `git rm` 🗑️
+### 15. `git rm` 🗑️
 **Description** : Supprime des fichiers du dépôt et du système de versionnement Git.
 
 **Exemple** :
@@ -175,7 +186,7 @@ Cela supprime le fichier du dépôt et le marque comme supprimé pour le prochai
 
 ## 🚨 Commandes supplémentaires utiles
 
-### 15. `git stash` 💼
+### 16. `git stash` 💼
 **Description** : Met temporairement de côté les modifications en cours de travail sans les commiter.
 
 **Exemple** :
@@ -186,7 +197,7 @@ Cela sauvegarde vos changements actuels sans les commiter, afin que vous puissie
 
 ---
 
-### 16. `git rebase` 🛠️
+### 17. `git rebase` 🛠️
 **Description** : Rebase une branche sur une autre pour réécrire l'historique des commits.
 
 **Exemple** :
@@ -197,7 +208,7 @@ Cela permet de replacer les commits de votre branche courante sur une autre bran
 
 ---
 
-### 17. `git diff` 🔍
+### 18. `git diff` 🔍
 **Description** : Compare les modifications entre l'état actuel des fichiers et le dernier commit ou un autre point de l'historique.
 
 **Exemple** :
@@ -208,7 +219,7 @@ Cela affiche les différences non commitées entre vos fichiers locaux et l'hist
 
 ---
 
-### 18. `git cherry-pick` 🍒
+### 19. `git cherry-pick` 🍒
 **Description** : Applique un commit spécifique d'une branche sur une autre branche.
 
 **Exemple** :
