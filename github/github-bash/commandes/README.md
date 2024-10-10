@@ -1,5 +1,5 @@
 
-# Commandes Git essentielles 🛠️
+# Commandes Git essentielles et avancées 🛠️
 
 Cette section répertorie les commandes **Git** les plus utilisées, accompagnées d'explications simples et d'exemples. Ces commandes sont utilisables via **Git Bash** sous Windows, Linux, et MacOS.
 
@@ -14,7 +14,7 @@ Cette section répertorie les commandes **Git** les plus utilisées, accompagné
 ```bash
 git init
 ```
-Cela crée un dossier `.git` qui contient toutes les informations du dépôt Git.
+Cela crée un dossier `.git` qui contient toutes les informations du dépôt Git. Utilisez cette commande pour démarrer un nouveau projet Git.
 
 ---
 
@@ -25,7 +25,7 @@ Cela crée un dossier `.git` qui contient toutes les informations du dépôt Git
 ```bash
 git clone https://github.com/utilisateur/nom-du-repo.git
 ```
-Cela télécharge le dépôt complet sur votre ordinateur.
+Cela télécharge une copie complète du dépôt distant sur votre ordinateur.
 
 ---
 
@@ -36,7 +36,7 @@ Cela télécharge le dépôt complet sur votre ordinateur.
 ```bash
 git status
 ```
-Cela vous indique les fichiers modifiés ou ajoutés qui ne sont pas encore commitées.
+Cela vous indique les fichiers modifiés, ajoutés ou supprimés qui ne sont pas encore commitées.
 
 ---
 
@@ -62,7 +62,7 @@ Cela place les fichiers dans la zone de staging, prêts à être commitées.
 ```bash
 git commit -m "Message de commit"
 ```
-Cela enregistre un snapshot de vos modifications avec un message explicatif.
+Cela enregistre un snapshot de vos modifications avec un message explicatif. Utilisez un message clair pour décrire les changements effectués.
 
 ---
 
@@ -75,7 +75,7 @@ Cela enregistre un snapshot de vos modifications avec un message explicatif.
 ```bash
 git pull origin main
 ```
-Cela fusionne les changements du dépôt distant avec votre branche locale.
+Cela fusionne les changements du dépôt distant avec votre branche locale. À utiliser régulièrement pour rester à jour avec les modifications du dépôt distant.
 
 ---
 
@@ -86,7 +86,7 @@ Cela fusionne les changements du dépôt distant avec votre branche locale.
 ```bash
 git push origin main
 ```
-Cela envoie vos changements sur la branche `main` du dépôt distant.
+Cela envoie vos changements sur la branche `main` du dépôt distant. Vous devez être à jour avec le dépôt distant avant de pousser.
 
 ---
 
@@ -99,14 +99,20 @@ Cela envoie vos changements sur la branche `main` du dépôt distant.
 ```bash
 git branch
 ```
+Cela affiche toutes les branches dans votre dépôt, avec un `*` indiquant la branche active.
 
-### 9. `git checkout` 🔄
-**Description** : Change de branche ou bascule sur un commit spécifique.
+---
+
+### 9. `git checkout` et `git checkout -b` 🔄
+**Description** :
+- `git checkout nom-de-la-branche` : Change de branche.
+- `git checkout -b nom-de-la-branche` : Crée une nouvelle branche et se place dessus.
 
 **Exemple** :
 ```bash
-git checkout nom-de-la-branche
+git checkout -b nouvelle-branche
 ```
+Cela crée et passe sur une nouvelle branche nommée `nouvelle-branche`. Très utile pour travailler sur de nouvelles fonctionnalités sans affecter la branche principale.
 
 ---
 
@@ -117,7 +123,7 @@ git checkout nom-de-la-branche
 ```bash
 git merge nom-de-la-branche
 ```
-Cela intègre les modifications d'une autre branche dans la branche active.
+Cela intègre les modifications d'une autre branche dans la branche active. Utilisez cette commande après avoir terminé le travail sur une branche secondaire.
 
 ---
 
@@ -130,6 +136,7 @@ Cela intègre les modifications d'une autre branche dans la branche active.
 ```bash
 git log
 ```
+Cela liste tous les commits effectués dans la branche courante, avec l'auteur, la date et le message du commit.
 
 ---
 
@@ -140,7 +147,31 @@ git log
 ```bash
 git reset --hard HEAD~1
 ```
-Cela annule le dernier commit et remet les fichiers à l'état précédent.
+Cela annule le dernier commit et remet les fichiers à l'état précédent. Utilisez cette commande avec précaution car elle peut détruire des modifications non poussées.
+
+---
+
+## 🚨 Commandes supplémentaires utiles
+
+### 13. `git stash` 💼
+**Description** : Met temporairement de côté les modifications en cours de travail sans les commiter.
+
+**Exemple** :
+```bash
+git stash
+```
+Cela sauvegarde vos changements actuels sans les commiter, afin que vous puissiez revenir à une version propre du dépôt.
+
+---
+
+### 14. `git rebase` 🛠️
+**Description** : Rebase une branche sur une autre pour réécrire l'historique des commits.
+
+**Exemple** :
+```bash
+git rebase main
+```
+Cela permet de replacer les commits de votre branche courante sur une autre branche (`main` dans cet exemple) pour obtenir un historique linéaire. À utiliser avec prudence.
 
 ---
 
