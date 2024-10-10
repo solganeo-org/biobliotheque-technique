@@ -36,9 +36,9 @@ L'objectif de cette bibliothèque est de :
 ## 📚 À venir...
 
 Nous continuons à enrichir cette bibliothèque avec de nouvelles sections sur :
-- Les **outils de gestion de projet**.
-- Les **méthodologies agiles** et les meilleures pratiques de développement.
-- Les **tendances technologiques** à surveiller.
+- Le **Marketing Cloud**.
+- Le CRM **SalesForce**.
+- L'hébergeur **Heroku**.
 
 ---
 
