@@ -52,6 +52,3 @@ Merci de faire partie de cette aventure ! 🎉 Nous sommes impatients de voir co
 ---
 
 Bonne exploration ! 🔍
-
-
-Modifié par Théo
