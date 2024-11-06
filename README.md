@@ -1,4 +1,3 @@
-
 # 🌟 Bienvenue dans la Bibliothèque Technique de Solganeo ! 🚀
 
 Nous sommes ravis de vous accueillir dans la **bibliothèque technique de Solganeo**, un espace conçu pour centraliser et organiser toutes les ressources et bonnes pratiques autour de nos projets techniques. Cette bibliothèque est votre guide pour explorer, apprendre et maîtriser les différents outils et technologies utilisés par Solganeo.
@@ -55,6 +54,4 @@ Merci de faire partie de cette aventure ! 🎉 Nous sommes impatients de voir co
 Bonne exploration ! 🔍
 
 
-Modifié par Aurore 
-
-
+Modifié par Théo
